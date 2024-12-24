@@ -1,0 +1,34 @@
+.productos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3E9DC;
+    gap: 50px;
+}
+
+.productos__img{
+    width: 20vw;
+    background-color: #666;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/*Media queries productos*/
+
+@media only screen and (max-width: 768px){
+
+    .productos__img{
+        width: 100vw;
+    }
+}

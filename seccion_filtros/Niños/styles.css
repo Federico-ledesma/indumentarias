@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    background-color: #F3E9DC;
+    overflow-x: hidden;
+}
+
+div,body{
+    box-sizing: border-box;
+}
+
+
+
+/*primer seccion 1er pagina*/
+
+.nav__container{
+    background-color: #39170D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tienda__container{
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: monospace;
+    color: #fff;
+}
+
+.link__listas{
+    text-decoration: none;
+}
+
+.link__listas:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.listas__container{
+    display: flex;
+}
+
+.listas{
+    margin-right: 20px;
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+    transition: font-size .1s linear;
+}
+
+.listas:hover{
+    font-size: 29px;
+}
+
+.link__logo{
+    text-decoration: none;
+    color:  #fff;
+    font-size: 25px;
+    transition: font-size .1s linear;
+}
+
+
+.link__logo:hover{
+    text-decoration: underline;
+    color:  #fff;
+    font-size: 30px;
+}
+
+/*CONTENIDO MAIN*/
+
+h2{
+    text-align: start;
+    font-size: 60px;
+}
+
+main{
+    display: flex;
+}
+
+.inputs__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: #fff;
+    height: 50vh;
+    padding: 20px 20px;
+}
+
+
+.box__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;;
+    width: 100vw;
+}
+
+.box{
+    width: 300px;
+    height: 350px;
+    background-color: #444;
+}

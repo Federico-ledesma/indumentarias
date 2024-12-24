@@ -1,0 +1,104 @@
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.box-1{
+    width: 400px;
+    height: 250px;
+    background-color: #F00;
+    margin-bottom: 50px;
+    animation: aparecer-1 both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.box-2{
+    width: 400px;
+    height: 250px;
+    background-color: #F00;
+    margin-bottom: 50px;
+    animation: aparecer-2 both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+@keyframes aparecer-1{
+    from{
+        transform: translateX(350px);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer-2{
+    from{
+        transform: translateX(-350px);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+h2{
+    text-align: center;
+    margin-top: 200px;
+    background-color: #fff;
+    padding: 50px;
+    font-size: 50px;
+}
+
+/*Media queries top sales*/
+
+@media only screen and (max-width: 768px){
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-1{
+        width: 100vw;
+        height: 400px;
+        background-color: #F00;
+        margin-bottom: 50px;
+    }
+
+    @keyframes aparecer-1{
+        from{
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 1;
+        }
+    }
+
+    .box-2{
+        width: 100vw;
+        height: 400px;
+        background-color: #F00;
+        margin-bottom: 50px;
+    }
+
+    @keyframes aparecer-2{
+        from{
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 1;
+        }
+    }
+    
+
+}

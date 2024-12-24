@@ -1,0 +1,51 @@
+.logos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6EDCE;
+}
+
+.link-logos{
+    margin-bottom: 100px;
+    
+}
+
+.logo{
+    background-color: #F6EDCE;
+    width: 200px;
+    margin: 0px 100px;;
+    animation: aparecer-logos both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+@keyframes aparecer-logos{
+    from{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/*Media queries logos*/
+
+@media only screen and (max-width: 768px){
+
+    .logos__container{
+        border: 2px solid #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -250px;
+    }
+
+    .logo{
+        background-color: #F6EDCE;
+        width: 25vw;
+        margin-top: 20px;
+    }
+}
+

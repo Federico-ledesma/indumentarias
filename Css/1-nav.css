@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    background-color: #F3E9DC;
+    overflow-x: hidden;
+}
+
+div,body{
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+}
+
+/*primer seccion 1er pagina*/
+
+.nav__container{
+    background-color: #39170D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tienda__container{
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: monospace;
+    color: #fff;
+}
+
+.link__listas{
+    text-decoration: none;
+}
+
+.link__listas:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.listas__container{
+    display: flex;
+}
+
+.listas{
+    margin-right: 20px;
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+    transition: font-size .1s linear;
+}
+
+.listas:hover{
+    font-size: 29px;
+}
+
+/*Segunda seccion 1er pagina*/
+
+.img__container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 70vh;
+    animation: mover 20s alternate-reverse linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(1500px);
+    }
+    100% {
+        transform: translateX();
+    }
+}
+
+/*tercera seccion 1er pagina*/
+
+.frase__container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+
+
+/*Media queries navbar*/
+
+@media only screen and (max-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    *{
+        box-sizing: border-box;
+    }
+
+
+    .link-logo{
+        font-size: 20px;
+    }
+
+    .listas{
+        list-style: none;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .listas:hover{
+        font-size: 15px;
+    }
+
+    .link__listas:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /*Segunda seccion 1er pagina*/
+
+    .img__container{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        width: 100vw;
+        height: 30vh;
+        animation: mover 20s alternate-reverse linear infinite;
+    }
+
+    .img__animacion{
+        width: 50vw;
+        height: 30vh;
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX();
+        }
+    }
+
+    /*tercera seccion 1er pagina*/
+
+    .frase__container{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+}
+
+} 
