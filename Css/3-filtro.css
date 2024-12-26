@@ -98,15 +98,16 @@ section{
 
 /*Media queries filtro*/
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
     .filtro{
         width: 50vw;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
     }
 
     .filtro__img-container{

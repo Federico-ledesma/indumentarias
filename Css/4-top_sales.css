@@ -56,7 +56,7 @@ h2{
 
 /*Media queries top sales*/
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
     .top{
         display: flex;
@@ -65,40 +65,25 @@ h2{
     }
 
     .box-1{
-        width: 100vw;
-        height: 400px;
+        max-width: 90vw;
+        height: 300px;
         background-color: #F00;
         margin-bottom: 50px;
-    }
-
-    @keyframes aparecer-1{
-        from{
-            transform: translateX(0px);
-            opacity: 0;
-        }
-    
-        to{
-            opacity: 1;
-        }
+        animation: aparecer-3 both;
+        animation-timeline: view();
+        animation-range: cover 5% cover 40%;
     }
 
     .box-2{
-        width: 100vw;
-        height: 400px;
+        max-width: 90vw;
+        height: 300px;
         background-color: #F00;
         margin-bottom: 50px;
+        animation: aparecer-4 both;
+        animation-timeline: view();
+        animation-range: cover 5% cover 40%;
     }
 
-    @keyframes aparecer-2{
-        from{
-            transform: translateX(0px);
-            opacity: 0;
-        }
-    
-        to{
-            opacity: 1;
-        }
-    }
-    
+
 
 }

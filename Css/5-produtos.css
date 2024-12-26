@@ -68,9 +68,51 @@
 
 /*Media queries productos*/
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
-    .productos__img{
-        width: 100vw;
+    .productos__container{
+        border: 2px solid #f00;
+        min-height: 60vh;
     }
+
+
+    .productos__img-1{
+        min-width: 40vw;
+        min-height: 30vh;
+        background-color: #666;
+        animation: aparecer-1 both;
+        animation-timeline: view();
+        animation-range: cover 5% cover 40%;
+    }
+
+    .productos__img-2{
+        min-width: 32vw;
+        min-height: 30vh;
+        background-color: #666;
+        animation: aparecer-1 both;
+        animation-timeline: view();
+        animation-range: cover 5% cover 40%;
+    }
+
+    .productos__img-3{
+        min-width: 40vw;
+        min-height: 30vh;
+        background-color: #666;
+        animation: aparecer-1 both;
+        animation-timeline: view();
+        animation-range: cover 5% cover 40%;
+    }
+
+
+    @keyframes aparecer-1{
+        from{
+            opacity: 1;
+    
+        }
+    
+        to{
+            opacity: 1;
+        }
+    }
+
 }

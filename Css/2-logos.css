@@ -46,14 +46,14 @@
 
 /*Media queries logos*/
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
     .logos__container{
         display: flex;
         flex-direction: row;
-        height: 50vh;
+        min-height: 70vh;
         box-shadow: 0px 0px 20px #39170D;
-        margin-top: -50px;
+        margin-top: 20px;
     }
 
     .link-logos-1{
@@ -74,13 +74,13 @@
 
     .logo-1{
         background-color: #F6EDCE;
-        width: 20vw;
+        max-width: 25vw;
         margin-top: 60px;
     }
 
     .logo-2{
         background-color: #F6EDCE;
-        width: 20vw;
+        max-width: 28vw;
         margin-top: 75px;
     }
 }

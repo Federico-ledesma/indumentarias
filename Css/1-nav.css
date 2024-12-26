@@ -86,7 +86,7 @@ header{
 
 /*Media queries navbar*/
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     body{
         display: flex;
         justify-content: center;
@@ -152,9 +152,12 @@ header{
 
     .frase__container{
         color: #fff;
-        width: 100%;
+        width: 100vw;
         background-color: #0008;
-        border-radius: 20px;
+    }
+
+    .frase{
+        margin: 12px;
     }
 
 } 
