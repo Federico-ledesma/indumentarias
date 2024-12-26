@@ -6,17 +6,59 @@
     gap: 50px;
 }
 
-.productos__img{
+.productos__img-1{
     width: 20vw;
     background-color: #666;
-    animation: aparecer both;
+    animation: aparecer-1 both;
     animation-timeline: view();
     animation-range: cover 5% cover 40%;
 }
 
-@keyframes aparecer{
+.productos__img-2{
+    width: 20vw;
+    background-color: #666;
+    animation: aparecer-2 both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.productos__img-3{
+    width: 20vw;
+    background-color: #666;
+    animation: aparecer-3 both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+@keyframes aparecer-1{
     from{
+        transform: translateX(50%);
         opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer-2{
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer-3{
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+
     }
 
     to{

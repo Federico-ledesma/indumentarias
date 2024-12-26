@@ -79,7 +79,6 @@ header{
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 50px;
     width: 50%;
 }
 
@@ -92,12 +91,17 @@ header{
         display: flex;
         justify-content: center;
         flex-direction: column;
+
     }
 
-
+    html{
+        overflow-x: hidden;
+    }
+    
     *{
         box-sizing: border-box;
     }
+
 
 
     .link-logo{
@@ -147,11 +151,10 @@ header{
     /*tercera seccion 1er pagina*/
 
     .frase__container{
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 50px;
-        width: 50%;
-}
+        color: #fff;
+        width: 100%;
+        background-color: #0008;
+        border-radius: 20px;
+    }
 
 } 
